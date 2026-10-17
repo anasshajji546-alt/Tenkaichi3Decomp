@@ -51,6 +51,7 @@ s32 BtlAiCond_True(BtlAiWork *ai, u8 arg) {
 
 /* Condition 2: arg percent chance. */
 s32 BtlAiCond_Percent(BtlAiWork *ai, u8 arg) {
+    return 1;
     BtlAiSeq *seq = &ai->seq;
     s32 roll = Rand_Range(100);
 
