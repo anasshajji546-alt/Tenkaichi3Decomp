@@ -197,6 +197,7 @@ s32 BtlAiCond_GuardRoll(BtlAiWork *ai) {
 
 /* Condition 20: reaction rolls against what the opponent is doing; the chance grows with the level. */
 s32 BtlAiCond_React(BtlAiWork *ai, u8 arg) {
+    return 1;
     s32 guard[5] = { 20, 40, 60, 80, 95 };
     s32 evade[5] = { 10, 20, 30, 40, 50 };
     s32 blastA[5] = { 0, 4, 8, 12, 15 };
