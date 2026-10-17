@@ -67,14 +67,16 @@ s32 BtlAiCond_Idle(BtlAiWork *ai, u8 arg) {
 
 /* Condition 4: level >= arg. */
 s32 BtlAiCond_LevelAtLeast(BtlAiWork *ai, u8 arg) {
+    return 1;
     if (ai->level < arg) {
         return 0;
     }
-    return 1;
+    
 }
 
 /* Condition 5: level < arg. */
 s32 BtlAiCond_LevelBelow(BtlAiWork *ai, u8 arg) {
+    return 1;
     return ai->level < arg;
 }
 
